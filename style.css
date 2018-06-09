@@ -1,0 +1,244 @@
+/*-----------------------------------------------
+*** General
+-----------------------------------------------*/
+
+
+body {
+    color: #555;
+ont-family: Open Sans;
+font-weight: 400;
+}
+
+
+
+
+div{
+    overflow: hidden;
+}
+
+
+/*-----------------------------------------------
+*** Upper section
+-----------------------------------------------*/
+
+.jumbotron{
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    background-position:bottom;
+    height: 40vh;  
+    text-align: center;
+}
+
+.jumbo{
+    width: 350px;
+}
+
+.income,.expense{
+    padding-top: 5px; 
+    background-color: #ff5049;
+    height: 35px;
+    text-align: left;
+}
+
+.income{
+ background-color: #28B9B5;   
+}
+
+.incomeTxt,.expenseTxt{
+    color: #444;
+    width: 70px;
+    margin-left: 3px;
+}
+
+.incomeV,.expenseV{
+    width: 200px;
+    margin-right: 2px;
+}
+
+.totalIncome,.totalExpense{
+    width: 150px;
+    text-align: right;
+}
+
+.incomePer,.totalExpensePer{
+    width: 30px;
+    font-size: 10px;
+    padding-top: 4px;
+    
+}
+
+
+
+
+
+
+/*-----------------------------------------------
+*** Input section
+-----------------------------------------------*/
+
+
+
+.inputLine{
+    width: 690px;
+}
+
+.select{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    transition: border 0.3s;
+
+    width:100px;
+    height: 29px;
+}
+.desc{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    transition: border 0.3s;
+
+    width: 270px;
+    border-style: none;
+}
+
+.value{
+    width: 100px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+.button{
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    border-style: none;
+    height: 30px;
+}
+
+.button:active { transform: translateY(2px); }
+
+.button:focus { outline: none; }
+
+.select:focus,.desc:focus,.value:focus{
+    outline: none;
+    border: 1px solid #28B9B5;
+    border-radius: 3px;
+}
+
+.okButton{
+    font-size: 32px;
+    display: contents;
+}
+
+
+/*-----------------------------------------------
+*** Bottom section
+-----------------------------------------------*/
+
+.incomeSection,.expenseSection{
+    background-color: #c3fdea
+}
+
+.incomeHead{
+    color: #28B9B5;
+    color: #60f2c1;
+    font-weight: 500;
+}
+
+.expenseHead{
+    color: #ff5049;
+    font-weight: 500;
+}
+
+.expenseHead{
+    color: #ff5049;
+    font-weight: 500;
+}
+
+.child{
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.child:first-child { border-top: 1px solid #e7e7e7; }
+.child:nth-child(even) { background-color: #f7f7f7; }
+
+
+.incomeValue,.expenseValue{
+    transition: transform 0.5s;
+}
+
+.incomeValue{
+    color: #28B9B5;
+}
+
+.expenseValue{
+    color: #ff5049;
+}
+
+.percnt{
+    font-size: 12px;
+    padding-top: 4px;
+    color: #ff5049;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+.cancelI,.cancelE{
+    border: none;
+    background: none;
+    font-size: 5px;
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.cancelI{
+    
+    color: #28B9B5;   
+}
+
+.cancelE{
+    color: #ff5049;
+}
+
+.cancelI:focus { outline: none; }
+.cancelE:focus { outline: none; }
+.cancelI:active { transform: translateY(2px); }
+.cancelE:active { transform: translateY(2px); }
+
+.child:hover .cancelI{
+     display: inline-block;     
+}
+
+.child:hover .cancelE{
+     display: inline-block;     
+}
+
+.child:hover .expenseValue{
+    font-weight: bold;
+    transform: translateX(-20px); 
+}
+
+.child:hover .incomeValue{
+    transform: translateX(-20px); 
+    font-weight: bold;
+}
+
+.child:hover .percnt{
+    font-weight: bold;
+    transform: translateX(-20px); 
+}
+
+.child:hover .cancelE{ 
+    font-weight: bold;
+}
+.child:hover .cancelI{ 
+    font-weight: bold;
+}
+
+.red { color: #FF5049 !important; }
+.focus:focus { border: 1px solid #FF5049 !important; }
+
+

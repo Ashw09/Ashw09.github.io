@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Get Budget</title>
+        <link rel="stylesheet" type="text/css" href="css/ionicons.min.css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="bootstrap-grid.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap-reboot.min.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            
+            <div class=" container">
+                
+                <div class="jumbo row no-gutters mx-auto">
+                    
+                    <div class="col-sm-12 col-xs-12 mb-3">
+                        Available Budget in <span class="date">%date%</span>
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12 mb-3">
+                        <h4><span class="budget" id="budget">000.00</span></h4>
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12 income clearfix">
+                        
+                        <div class="incomeTxt float-left">Income</div>
+                        
+                        <div class="incomeV float-right clearfix">
+                            <span class="float-left text-right sign"></span>
+                            <div id="totalIncome" class="float-left  totalIncome">000.00</div>
+                            <div class="float-right incomePer"></div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12 expense clearfix mt-3">
+                        
+                        <div class="expenseTxt float-left">Expenses</div>
+                        
+                        <div class="expenseV float-right clearfix">
+                            <span class="float-left text-right sign"></span>
+                            <div id="totalExpense" class="float-left totalExpense">000.00</div>
+                            <div id="totalExpensePer" class="float-right totalExpensePer"></div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="container text-cente mb-5 ">
+            <div class="row inputLine text-center mx-auto">
+            <div class= "col-sm-12 col-xs-12 col-md-3 mb-2">
+                <select id="selectSign" class="select">
+                    <option value="inc">Income</option>
+                    <option value="exp">Expense</option>
+                </select>
+            </div>            
+            <div class="col-sm-12 col-xs-12 col-md-5 mb-2 text-center">
+                <input id="descInput" class="desc" type="text" placeholder="Income/Expense">
+            </div>
+                
+            <div class="col-sm-12 col-xs-12 col-md-3 ">
+                <input id="valInput" class="value" type="number" placeholder="Value">
+            </div>
+                
+            <div class="col-sm-12 col-xs-12 col-md-1 ">
+                <button id="okButton" class="button mx-auto"><i class="okButton mx-auto ion-ios-checkmark-outline"></i></button>    
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        <div class="container  text-center parent clearfix">
+            
+                        
+                <div class="col-sm-12 col-xs-12 col-md-6 float-left">
+                    
+                    <section class="incomeSection">
+                        
+                        <div class="mb-2 incomeHead">Income</div>
+                        
+            <!--        <section id="inc-%id%" class="child col-sm-12 col-xs-12 col-md-12 clearfix">
+                            <div class="float-left clearfix col-6 ">
+                                <div class="incomeDesc float-left">%desc%</div>
+                            </div>
+                            <div class="float-right clearfix  col-6">
+                                <div class="float-left incomeValue col-10 ">%val%</div>
+                                <button class="cancelI col-2 float-right"><i class="cancelII ion-ios-close-outline"></i></button>
+                            </div>
+                        </section>  -->
+  
+                    </section>
+                    
+                </div>
+                
+                
+                    
+                <div  class="col-sm-12 col-xs-12 col-md-6 float-right">
+                    
+                    <section class="expenseSection ">
+                        
+                        <div class="mb-2 expenseHead ">Expense</div>
+                        
+        <!--              <section id="exp-%id%" class="child col-sm-12 col-xs-12 col-md-12 clearfix">
+                              <div class="float-left clearfix col-9 ">
+                                  <div class=" expenseDesc float-left col-8 text-left">%desc%</div>
+                                  <div class="ext-right float-left col-4 expenseValue">%val%</div>
+                              </div>
+                              <div class="float-right clearfix col-3 ">
+                                  <div class="percnt float-left col-6 text-left">45%</div>
+                                  <button class="cancelE col-6 float-right"><i class="cancelIE ion-ios-close-outline"></i></button>
+                              </div>
+                            </section>    -->
+                    </section>
+                </div>
+                
+                        
+                
+            </div>
+        
+        
+        <script src="js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
